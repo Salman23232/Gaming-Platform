@@ -22,9 +22,9 @@
 
     <!--=============== SWIPER CSS ===============-->
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Responsive gaming website - game hub</title>
   </head>
   <body>
@@ -61,7 +61,8 @@
           <i
             class="ri-notification-3-line"
             onclick="addNotificationbar()"
-            id="notification" style=" cursor: pointer;"
+            id="notification"
+            style="cursor: pointer"
           ></i>
           <div class="nav__toggle nav__buttons mx-5" id="nav-toggle">
             <i class="ri-apps-2-fill"></i>
@@ -89,10 +90,21 @@
           <div class="wrapper">
             <div class="row">
               <div class="col-lg-12">
-                <img src="img/Screenshot_3.png" style="opacity: 25%;" class="home-bg" alt="" />
-                <img src="img/hero-banner-bg.png" class="second-home-bg" alt="" />
+                <img
+                  src="img/Screenshot_3.png"
+                  style="opacity: 25%"
+                  class="home-bg"
+                  alt=""
+                />
+                <img
+                  src="img/hero-banner-bg.png"
+                  class="second-home-bg"
+                  alt=""
+                />
                 <div class="home-data">
-                  <h1 class="home-title">Play amazing brain games and <br>level up your brain</h1>
+                  <h1 class="home-title">
+                    Play amazing brain games and <br />level up your brain
+                  </h1>
                   <a href="" class="button">Explore all games</a>
                 </div>
               </div>
@@ -103,15 +115,57 @@
 
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
-        <swiper-container class="mySwiper" init="false">
-          <swiper-slide>
-            <img src="game" alt="">
-          </swiper-slide>
-          <swiper-slide>Slide 2</swiper-slide>
-          <swiper-slide>Slide 3</swiper-slide>
-          <swiper-slide>Slide 4</swiper-slide>
-          <swiper-slide>Slide 5</swiper-slide>
-        </swiper-container>
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="img/640e105e282dd4d50d9f229b5ce9dfcb.jpg" alt="" />
+                <div class="box-text">
+                  <h2>2048 game</h2>
+                  <div class="rating-download">
+                    <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <span>4.7</span>
+                    </div>
+                    <a href="" class="box-btn"><i class="ri-google-play-fill"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="img/640e105e282dd4d50d9f229b5ce9dfcb.jpg" alt="" />
+                <div class="box-text">
+                  <h2>2048 game</h2>
+                  <div class="rating-download">
+                    <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <span>4.7</span>
+                    </div>
+                    <a href="" class="box-btn"><i class="ri-google-play-fill"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="img/640e105e282dd4d50d9f229b5ce9dfcb.jpg" alt="" />
+                <div class="box-text">
+                  <h2>2048 game</h2>
+                  <div class="rating-download">
+                    <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <span>4.7</span>
+                    </div>
+                    <a href="" class="box-btn"><i class="ri-google-play-fill"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </section>
 
       <!--==================== POPULAR ====================-->
