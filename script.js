@@ -43,6 +43,25 @@ function removeNotificationbar() {
   const notificationBar = document.getElementById("notificationBar");
   notificationBar.classList.remove("show-notification");
 }
+/*=============== hover video ===============*/
+// Select all video elements with the class 'video'
+let videos = document.querySelectorAll(".video");
+
+// Loop through each video and add event listeners
+videos.forEach(video => {
+  video.addEventListener("mouseenter", () => {
+    video.play();
+  });
+
+  video.addEventListener("mouseleave", () => {
+    video.pause();
+  });
+});
+
+
+
+
+
 /*=============== SHOW SCROLL UP ===============*/
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
@@ -51,25 +70,4 @@ function removeNotificationbar() {
 
 // swiper
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 15,
-    },
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 10,
-    },
-  },
-});
+

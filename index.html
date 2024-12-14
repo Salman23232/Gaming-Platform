@@ -16,7 +16,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
     />
-
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="style.css" />
 
@@ -25,6 +24,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <!-- bootstrap -->
     <title>Responsive gaming website - game hub</title>
   </head>
   <body>
@@ -105,6 +105,7 @@
                   <h1 class="home-title">
                     Play amazing brain games and <br />level up your brain
                   </h1>
+
                   <a href="" class="button">Explore all games</a>
                 </div>
               </div>
@@ -114,57 +115,81 @@
       </section>
 
       <!--==================== ABOUT ====================-->
-      <section class="about section" id="about">
-        <div class="swiper-container mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="box">
-                <img src="img/640e105e282dd4d50d9f229b5ce9dfcb.jpg" alt="" />
-                <div class="box-text">
-                  <h2>2048 game</h2>
-                  <div class="rating-download">
-                    <div class="rating">
-                      <i class="ri-star-fill"></i>
-                      <span>4.7</span>
-                    </div>
-                    <a href="" class="box-btn"><i class="ri-google-play-fill"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="box">
-                <img src="img/640e105e282dd4d50d9f229b5ce9dfcb.jpg" alt="" />
-                <div class="box-text">
-                  <h2>2048 game</h2>
-                  <div class="rating-download">
-                    <div class="rating">
-                      <i class="ri-star-fill"></i>
-                      <span>4.7</span>
-                    </div>
-                    <a href="" class="box-btn"><i class="ri-google-play-fill"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="box">
-                <img src="img/640e105e282dd4d50d9f229b5ce9dfcb.jpg" alt="" />
-                <div class="box-text">
-                  <h2>2048 game</h2>
-                  <div class="rating-download">
-                    <div class="rating">
-                      <i class="ri-star-fill"></i>
-                      <span>4.7</span>
-                    </div>
-                    <a href="" class="box-btn"><i class="ri-google-play-fill"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+      <section class="games section" id="about">
+        <div class="container">
+          <div class="game__title">
+            <h1 class="title">Explore Popular games</h1>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="game__boxs">
+            <div class="box">
+              <video src="New Project.mp4" class="video"></video>
+
+              <div class="box-text">
+                <h2>2048 game</h2>
+                <hr />
+                <div class="rating-download">
+                  <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <span>4.7</span>
+                  </div>
+                  <a href="./2048/2048.html" class="box-btn"
+                    ><i class="ri-google-play-fill"></i>Play</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <video src="New Project.mp4" class="video"></video>
+
+              <div class="box-text">
+                <h2>2048 game</h2>
+                <hr />
+                <div class="rating-download">
+                  <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <span>4.7</span>
+                  </div>
+                  <a href="./2048/2048.html" class="box-btn"
+                    ><i class="ri-google-play-fill"></i>Play</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <video src="New Project.mp4" class="video"></video>
+
+              <div class="box-text">
+                <h2>2048 game</h2>
+                <hr />
+                <div class="rating-download">
+                  <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <span>4.7</span>
+                  </div>
+                  <a href="./2048/2048.html" class="box-btn"
+                    ><i class="ri-google-play-fill"></i>Play</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <video src="New Project.mp4" class="video"></video>
+
+              <div class="box-text">
+                <h2>2048 game</h2>
+                <hr />
+                <div class="rating-download">
+                  <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <span>4.7</span>
+                  </div>
+                  <a href="./2048/2048.html" class="box-btn"
+                    ><i class="ri-google-play-fill"></i>Play</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -181,8 +206,146 @@
       <section class="contact section" id="contact"></section>
     </main>
 
-    <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <!-- 
+    - #FOOTER
+  -->
+
+    <!-- <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+
+            <li>
+              <a href="#" class="footer-link">Tournaments</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy and Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              153 Williamson Plaza, Maggieberg, MT 09514
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">Info@unigine.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Phone:</span>
+
+            <a href="tel:+12345678910" class="contact-link">+1 (234) 567-8910</a>
+          </div>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 codewithsadee All Rights Reserved.
+        </p>
+
+      </div>
+    </div>
+
+  </footer> -->
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+    <!-- 
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a> -->
 
     <!--========== SCROLL UP ==========-->
 
@@ -193,5 +356,6 @@
 
     <!--=============== Script JS ===============-->
     <script src="script.js"></script>
+    <!-- tailwind css -->
   </body>
 </html>
