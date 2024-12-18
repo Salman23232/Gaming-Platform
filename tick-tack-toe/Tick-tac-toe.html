@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tick-tac-toe.css">
+    <!--=============== REMIXICONS ===============-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+          <a href="#home" class="nav__logo" id="nav-logo"
+            ><img src="img/fav.png" alt="image" /> GameHub</a
+          >
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list" id="nav-list">
+              <li class="nav__link" id="nav-link"><a href="#home">Home</a></li>
+              <li class="nav__link" id="nav-link">
+                <a href="#about">About Us</a>
+              </li>
+              <li class="nav__link" id="nav-link">
+                <a href="#popular">Popular</a>
+              </li>
+              <li class="nav__link" id="nav-link">
+                <a href="#products">Products</a>
+              </li>
+              <li class="nav__link" id="nav-link">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+            <!-- <---------------------Close button--------------------->
+            <div class="nav__close" id="nav-close">
+              <i class="ri-close-large-line"></i>
+            </div>
+          </div>
+  
+          <!-- <---------------------toggle button--------------------->
+          <div class="nav__buttons">
+            <i
+              class="ri-notification-3-line"
+              onclick="addNotificationbar()"
+              id="notification"
+              style="cursor: pointer"
+            ></i>
+            <div class="nav__toggle nav__buttons mx-5" id="nav-toggle">
+              <i class="ri-apps-2-fill"></i>
+              <a href="" class="button">login</a>
+              <a href="" class="button">signup</a>
+            </div>
+          </div>
+          <div
+            class="notification"
+            onclick="addNotificationbar()"
+            id="notificationBar"
+          >
+            <div class="notification__box">
+              <i class="ri-close-circle-fill"></i>
+              <p>New game lauched and added to Gamehub</p>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <h1 class="title">Tic Tac Toe</h1>
+    <div class="wrapper">
+        <div class="container">
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+        </div>
+        <div class="restart-container">
+            <h2>Wellcome to Tick Tac Toe Game. <span class="info">The Turn is for X</span></h2>
+            <h2 class="status" id="status"></h2>
+            <div id="score"><span>X </span> <span class="score">0</span> - <span>O </span> <span class="score">0</span></div>
+
+
+            <img src="congrats-fireworks (1).gif" id="win-dance" alt="">
+        <button class="start button" id="start-button">Start</button>
+        <button class="restart button" id="restart-button">Restart</button>
+        </div>
+    </div>
+</body>
+<script src="tick-tac-toe.js"></script>
+</html>
